@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: fantasy;
+    margin:0px;
+    padding: 0px;
+}
+
+#main-container{
+    height: 90vh;
+    display: flex;
+}
+
+#file-system{
+    height: 100%;
+    width: 20%;
+    border: 1px solid black;
+    background-color: wheat;
+}
+
+#search-bar{
+    height: 5%;;
+    width: 100%;
+    display: flex;
+    margin-top: 2px;
+}
+#search{
+    width: inherit;
+}
+.fa-plus{
+    margin-left: 67%;
+    
+
+}
+
+#songs,#liked-songs,#albums{
+    height: 5%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#songs-queue{
+    height: 100%;
+    width:80%;
+    background-color: wheat;
+}
+#song-list-title{
+    border: 1px solid black;
+    height: 5%;
+    display: flex;
+}
+#songs-list-container{
+    overflow-y:auto;
+    height:95%;
+}
+#search-song-list{
+    overflow-y:auto;
+    border-bottom : 1px solid black;
+}
+#song-list{
+    height: 95%;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+
+#music-tab{
+    height: 4%;
+    width: 100%;
+    font-family:fantasy;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    display:flex;
+}
+
+.music-tab{
+    height: 4%;
+    width: 100%;
+    font-family:fantasy;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    display:flex;
+}
+
+.liked,.delete{
+    display:none;
+}
+
+#music-tab:hover > .liked{
+    display:block;
+}
+
+.music-tab:hover > .delete{
+    display:block;
+}
+
+#music-tab> button{
+    cursor: pointer;
+}
+
+#liked-songs-container{
+    height: 100%;
+    width:80%;
+    background-color: wheat;
+}
+
+#liked-songs-title{
+    border: 1px solid black;
+    height: 5%;
+    display: flex;
+}
+
+#liked-song-list{
+    height:95%;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto;
+
+}
+#footer{
+    height: 10vh;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    
+}
+
+#easyAccess{
+    height: 10vh;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-left:20%;
+}
+
+#seeker{
+    height:20%;
+    width:20%;
+}
+
+#prev,#next,#play,#random,#stop{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 20%;
+    background-color: lightgreen;
+    align-items: center;
+    cursor: pointer;
+}
